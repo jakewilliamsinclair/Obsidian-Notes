@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c2876f763b16f794",
+        "id": "531df4915d3e48a9",
         "type": "tabs",
         "children": [
           {
-            "id": "6ed78e5bd17b58c1",
+            "id": "4b9550d9e0c27ffc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Statistical Modelling and Analysis"
+              "title": "New tab"
             }
           }
         ]
@@ -166,10 +162,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6ed78e5bd17b58c1",
+  "active": "4b9550d9e0c27ffc",
   "lastOpenFiles": [
     "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
+    "Year 4/Statistical Modelling and Analysis/Special Discrete Distributions Short Notes.md",
     "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
+    "Year 1/Types of Data.md",
     "Year 4/Network Security/Network Security.md",
     "Year 4/Statistical Modelling and Analysis",
     "Year 4/Network Security",
@@ -182,7 +180,6 @@
     "Untitled 1.md",
     "Year 1",
     "Untitled.canvas",
-    "Year 1/Types of Data.md",
     "Year 1/Types of Variable.md",
     "Year 1/Types of Experiment.md",
     "Year 1/Nominal.md",
