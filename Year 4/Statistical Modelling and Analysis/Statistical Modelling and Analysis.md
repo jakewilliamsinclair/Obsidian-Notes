@@ -1,7 +1,6 @@
 $$
 \newcommand{\P}{\mathbb{P}}
 \newcommand{\E}{\mathbb{E}}
-\usepackage{amsmath}
 $$
 # Spread
 
@@ -112,7 +111,12 @@ $\P($At least one accident$)=\P(X\gt0)=1-\P(X=0)=1-e^{-4}=1-0.0183=0.9817$
 ## Continuous Uniform
 $X$ is the position of a point chosen randomly in the interval $(a,b)$.
 $f_X(x)=\frac{1}{b-a}$ 
-$F_X(x)=\P(X\le x)=
+![[Pasted image 20261009102319.png]]
+### Example
+A unit length stick is broken in two, with the break at location $X$, being uniformly distributed along its length. What is the probability that the longest section after the break is longer than 0.8.
+$\P(longest\ section\gt0.8)=\P(X\lt0.2\ or\ X\gt0.8)$ 
+Events are mutually exclusive so:
+$\P(X\lt0.2)+\P(X\gt0.8)=0.2+0.2=0.4$ 
 ## Geometric Random Variables
 $X\sim Geo(p)$ 
 $X$ is the number of trials until the first success occurs in a sequence of Bernoulli trials with probability $p$. The event $X=x$ occurs when the first $x-1$ trials fail and the next trial succeeds.
@@ -128,6 +132,51 @@ $1-\P(X=1)-P(X=2)=1-0.92-0.08\times0.92=0.0064$
 $X\sim Exp(\lambda)$ 
 The waiting time between events, similar to Poisson.
 $f_X(x)=\lambda e^{-\lambda x}, x\gt0$ 
+$F_X(x)=\displaystyle\int_{0}^{x}\lambda e^{-\lambda x}du=1-e^{-\lambda x},\ x\gt 0$ 
+### Example
+The length of times between buses are modelled by an exponential random
+variable with mean 20.
+The length of times between buses are modelled by an exponential random
+variable with mean 20.
+Let $X$ be the time until the next bus arrives, so $X\sim Exp\left( \frac{1}{20} \right)$ 
+Q1: $\P(X\gt 20)=1-\P(X\leq 20)=1-F_{X}(20)=e^{\frac{-20}{20}}=0.368$ 
+Q2: $\P(5\leq X\leq 20)=\P(X\leq 20)-\P(X\leq 5)$ 
+$=\left( 1-e^{-\frac{20}{20}} \right)-\left( 1-e^{-\frac{5}{20}} \right)=0.411$ 
+Q3: Let $Y$ be the remaining time to wait.
+$F_{Y}=\P(Y\leq y)1-\P(Y>y)=1-\P(X>y+25|X>25)$ 
+$=\frac{\P(X>y+25)}{\P(X>25)}=\frac{e^{-\frac{y+25}{20}}}{e^{-\frac{25}{20}}}=e^{\frac{25}{20}-\frac{y+25}{20}}=e^{-\frac{y}{20}}$ 
 ## Gamma Random Variables
+$X\sim Gamma(\alpha,\beta)$ 
+Widely used to model positive quantities, particularly in the context of Bayesian inference. Coincides with exponential distribution when $\alpha=1$.
+$f_{X}(x)=\frac{\beta^{\alpha}}{\Gamma(\alpha)}x^{\alpha-1}e^{-\beta x}$ 
+The parameters $\alpha>0$ and $\beta>0$ control the expectation and variance of $X$, $\Gamma$ is the gamma function.
+$\E(X)=\frac{\alpha}{\beta}$ 
+$Var(X)=\frac{\alpha}{\beta^2}$ 
 ## Beta Random Variables
+$X\sim Beta(\alpha, \beta)$ 
+Widely used to model probabilities, particularly in the context of Bayesian inference. Coincides with uniform distribution when $\alpha=\beta=1$.
+$f_{X}(x)=\frac{1}{B(\alpha,\beta)}x^{\alpha-1}(1-x)^{\beta-1}$ 
 ## Normal Random Variables
+
+Also called the Gaussian distribution. Important for many different uses.
+$f_{X}(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2\sigma^2(x-\mu)^2}}\ for -\infty<x<\infty$ 
+It is important to note the probability density function is symmetric around $\mu$.
+The mean of a $N(\mu,\sigma^2)$ random variable is $\mu$ and the variance is $\sigma^2$.
+### Linear Transformation
+Let $X\sim N(\mu,\sigma^2)$. The linear transformation $Y=a+bX$ has a distribution $Y\sim N(a+b\mu,b^2\sigma^2)$.
+The $N(0,1)$ distribution is called the standard normal.
+Let $X\sim N(\mu,\sigma^2)$ and let $Z=\frac{X-\mu}{\sigma}$, this transformation is called normalising, and $Z\sim N(0,1)$ is a standard normal random variable.
+For $Z\sim N(0,1)$ the associated [[#Probability Density Function|pdf]] is
+$f_{Z}=\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}^2}$ 
+To find probabilities associated with the distribution $X\sim N(\mu,\sigma^2)$ we standardise the variable and look up the probability in published tables.
+### Example
+The diameters of bolts measured in mm are modelled by $X\sim N(20,4)$.
+1. What is the diameter such that only 1% of the population are larger?
+2. What is the diameter such that only 5% of the population are smaller?
+1.
+We have $\P(Z>2.326)=0.01$ so now we reverse the transformation to get
+$x=2.326\times 2+20=24.65$.
+2.
+We have $\P(Z>1.645)=0.05$ giving $\P(Z<-1.645)=0.05$ (symmetric), so the reverse transformation is
+$-1.645\times 2+20=16.71$ 
+so $\P(X<16.72)=0.05$ 
