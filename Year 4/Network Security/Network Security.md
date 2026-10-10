@@ -1,14 +1,13 @@
 $\newcommand{\Z}{\mathbb{Z}}$
-# Basics
-## CIA - Information Security
+# CIA - Information Security
 
-### Confidentiality
+## Confidentiality
 Preventing disclosure of information to unauthorised entities
 
-### Integrity
+## Integrity
 Preventing unauthorised modification of information
 
-### Availability
+## Availability
 Data is accessible and usable upon demand by an authorised entity
 
 In cryptography availability becomes
@@ -119,15 +118,53 @@ There are several ways to combine encryption and message authentication
 schemes, e.g., encrypt-and-mac, encrypt-then-mac, mac-then-encrypt, etc.
 It is good to perform encryption and authentication as a single operation (authenticated encryption), with an example being AES-GCM.
 ### GCM - Galois/Counter Mode
-Extends CTR mode by including a keyed hash value
-# Rings
-$\Z_p^∗=\{1,2,4,7,8,11,13,14\}$
-2 is a generator of $\Z_p^*$ as 
-| x | 2x mod 11 |
-| 1 |   2 |
-| 2 |   4 |
-| 8 |   5 |
-| 5 | 10 |
-| 9 |   7 |
-| 7 |   3 |
-| 6 |   1 |
+Extends CTR mode by including a keyed hash value, referred to as the authentication tag, included in the ciphertext. The tag has the same size as a block of the cipher.
+$h_{i} = (h_{i-1}\oplus b_{i})\times E_{k}(0)$ 
+The tag is checked before decryption occurs.
+# Asymmetric Cryptography (Public Key)
+## Modular Arithmetic
+$\Z$ is the set of all integers $\{\dots,-2,-1,0,1,2,\dots\}$ 
+$\Z=\{0,\dots,p-1\}$ is the set of all positive integers modulo p
+$\Z_{7}^∗=\{1,2,3,4,5,6\}$ 
+$\Z_{15}^∗=\{1,2,4,7,8,11,13,14\}$ 
+## One-way Functions
+Easy to compute but hard to invert (no algorithm exists)
+Examples:
+- Pre-image resistant hash functions
+- Multiplication of two large prime numbers (factoring is hard)
+- Discrete Exponentiation
+	- e.g. exponentiation modulo a large prime number
+### Discrete Exponentiation
+Easy to compute in "linear time"
+$3^{65537}\ mod\ 10=?$ 
+![[Pasted image 20261010125455.png|507]]
+Now try to reverse it, discrete logarithms are not as easy.
+### Generators
+2 is a generator of $\Z_{11}^*$ as 
+![[Pasted image 20261010130551.png]]
+## Diffie-Hellman Key Exchange
+**NOTE**: All operations in $\Z_{p}$ are $mod\ p$ so we will omit it.
+g is a generator of $\Z_{p}^{*}$ 
+**Alice**:
+random $x$ from $\{1,\dots,p-2\}$ 
+send $g^{x}$ 
+**Bob**:
+random y from $\{1,\dots,p-2\}$ 
+sends $g^{y}$ 
+
+Alice computes $k_{A}=(g^{y})^{x}=g^{xy}$ 
+Bob computes $k_{A}=(g^{x})^{y}=g^{xy}$ 
+Eve: knows p, g, $g^x$ and $g^y$, should not be able to compute $g^{xy}$.
+Eve cannot calculate as she doesn't have $x$ or $y$, only $g^x$ and $g^y$ and due to the difficulty of getting $x$ or $y$ from these it is secure and $g^{xy}$ cannot be computed.
+### Attacks
+This algorithm is secure against a passive adversary as they cannot compute and values from the available information but an active adversary can perform a man in the middle attack, pretending to each person to be the other.
+![[Pasted image 20261010131931.png]]
+Furthermore Diffie-Hellman requires both parties to be "online".
+## Public Key Encryption
+Anyone can encrypt a message using a public key but only intended parties can use their secret key to decrypt. In terms of Diffie-Hellman, $g^y$ is Bob's public key and $y$ is Bob's secret key.
+## ElGamal Encryption Scheme
+With $g^a$ as someone's public key and $a$ as someone's private key, we have an encryption scheme.
+Alice's ciphertext is now $(c_{1},c_{2})=(g^x,g^{xy}\times m)$ 
+Bob can decrypt using his private key $y$:
+$(g^x)^y=g^{xy}$ 
+$\frac{c_{2}}{g^{xy}}=m$ 
