@@ -168,3 +168,21 @@ Alice's ciphertext is now $(c_{1},c_{2})=(g^x,g^{xy}\times m)$
 Bob can decrypt using his private key $y$:
 $(g^x)^y=g^{xy}$ 
 $\frac{c_{2}}{g^{xy}}=m$ 
+## RSA Crypto System
+### Textbook RSA
+Public key: $pk=(e,n)$ is used for encryption
+Private key: $sk=(d,n)$ is used for decryption.
+$n\in\Z$ and $e,d\in\Z_{n}$ must be carefully chosen.
+The ciphertext is formed as $c=m^e\ mod\ n$ 
+$n$ must be chosen so that $1=ed\ mod\ (p-1)(q-1)$ 
+e – random, but such that $gcd(e, (p -1)(q -1)) = 1$ 
+d – such that $ed = 1\ mod\ (p-1)(q-1)$ 
+
+Textbook RSA is deterministic, the same message encrypted twice produces the same ciphertext, this means that for small sets of probable plaintexts, adversary can tell what is said (e.g. "yes" or "no").
+
+No deterministic encryption scheme is secure against chosen plaintext attacks,
+choose any $m_0,m_1$, encrypt them to $c_0=E_{pk}(m_0)$ and compare the result to the ciphertext.
+# Hybrid Encryption
+Makes use of both symmetric and asymmetric to improve security.
+Alice uses a key $k$ an Bob's public key to encrypt to $c_1$, she also symmetrically encrypts plaintext $m$ with $k$ to $c_2$.
+Bob can then decrypt $c_1$ using his private key, obtaining $k$ with which he symmetrically decrypts $c_2$ to obtain $m$.

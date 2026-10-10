@@ -115,12 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Types of Experiment.md",
+                "file": "Year 4/Network Security/Network Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Types of Experiment"
+              "title": "Outgoing links"
             }
           },
           {
@@ -130,7 +130,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -142,10 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Types of Experiment.md"
+                "file": "Year 4/Network Security/Network Security.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Types of Experiment"
+              "title": "Outline"
             }
           },
           {
@@ -177,7 +182,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b92d01fb6a403c74",
+  "active": "2af0438f41a4aafc",
   "lastOpenFiles": [
     "Pasted image 20261010131931.png",
     "Pasted image 20261010130551.png",
