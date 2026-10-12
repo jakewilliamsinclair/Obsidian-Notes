@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e55ea3a8fbf4a8d9",
+        "id": "dbad63b16461c80e",
         "type": "tabs",
         "children": [
           {
-            "id": "556bace626a8db8d",
+            "id": "dfa88843ea61084c",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Year 4/Network Security/Network Security.md",
-                "bFile": "Year 4/Network Security/Network Security.md",
+                "aFile": "Year 4/Dissertation/Notes on Dissertation Topics.md",
+                "bFile": "Year 4/Dissertation/Notes on Dissertation Topics.md",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Network Security  (Working Tree)"
+              "title": "Diff: Notes on Dissertation Topics  (Working Tree)"
             }
           }
         ]
@@ -179,9 +179,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "556bace626a8db8d",
+  "active": "dfa88843ea61084c",
   "lastOpenFiles": [
-    "Year 4/Dissertation/Notes on HQC Attacks.md",
+    "Year 4/Dissertation/Notes on Dissertation Topics.md",
     "Untitled 1.base",
     "Untitled.base",
     "Pasted image 20261009102025.png",
