@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ad085e57292fbe8a",
+        "id": "0e075a9b3a726bb9",
         "type": "tabs",
         "children": [
           {
-            "id": "b92d01fb6a403c74",
+            "id": "0cb474ba606256c3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Year 4/Network Security/Network Security.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Untitled.base",
+                "bFile": "Untitled.base",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Network Security"
+              "icon": "diff",
+              "title": "Diff: Untitled.base  (Working Tree)"
             }
           }
         ]
@@ -115,12 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 4/Network Security/Network Security.md",
+                "file": "Types of Experiment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Types of Experiment"
             }
           },
           {
@@ -130,9 +130,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
+                "useHierarchy": true
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -144,13 +142,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 4/Network Security/Network Security.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "Types of Experiment.md"
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Types of Experiment"
             }
           },
           {
@@ -182,12 +177,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2af0438f41a4aafc",
+  "active": "0cb474ba606256c3",
   "lastOpenFiles": [
+    "Year 2/Software Hardware Interface/Untitled.md",
+    "Year 1/Understanding Users and User Requirements.md",
+    "Year 1/Types of Variable.md",
+    "Year 1/Types of Experiment.md",
+    "Year 1/Types of Data.md",
+    "Year 1/Nominal.md",
+    "Year 1/Inferential Statistics.md",
+    "Untitled.base",
+    "Year 4/Network Security/Network Security.md",
     "Pasted image 20261010131931.png",
     "Pasted image 20261010130551.png",
     "Pasted image 20261010125455.png",
-    "Year 4/Network Security/Network Security.md",
     "Pasted image 20261010115853.png",
     "Pasted image 20261010114519.png",
     "Pasted image 20261010111411.png",
@@ -196,21 +199,14 @@
     "Pasted image 20261009102025.png",
     "Pasted image 20261009102319.png",
     "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
-    "Year 1/Types of Data.md",
     "Year 4/Statistical Modelling and Analysis",
     "Year 4/Network Security",
     "Year 4",
-    "Year 1/Understanding Users and User Requirements.md",
-    "Year 1/Inferential Statistics.md",
-    "Year 2/Software Hardware Interface/Untitled.md",
     "Year 2/Software Hardware Interface",
     "Year 2",
     "Untitled 1.md",
     "Year 1",
     "Untitled.canvas",
-    "Year 1/Types of Variable.md",
-    "Year 1/Types of Experiment.md",
-    "Year 1/Nominal.md",
     "Welcome.md",
     "create a link.md",
     "Experimental Design"
