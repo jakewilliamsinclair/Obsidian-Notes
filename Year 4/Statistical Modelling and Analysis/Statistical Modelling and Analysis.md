@@ -180,3 +180,11 @@ $x=2.326\times 2+20=24.65$.
 We have $\P(Z>1.645)=0.05$ giving $\P(Z<-1.645)=0.05$ (symmetric), so the reverse transformation is
 $-1.645\times 2+20=16.71$ 
 so $\P(X<16.72)=0.05$ 
+# Sampling Distributions and the Central Limit Theorem
+To estimate $\mu$, $\E\left( \sum_{i=1}^{n}\E(X_{i}) \right)=n\mu$ 
+
+$\E(\bar X)=\E\left( \frac{1}{n}\sum_{i=1}^{n}X_{i} \right)=\frac{1}{n}n\mu=\mu$ 
+$Var(\bar X)=\dots=\frac{\sigma^{2}}{n}$ 
+As the number of samples increases, the mean tends towards a normal distribution, this is called the Central Limit Theorem
+## Central Limit Theorem
+For large $n, \bar{X}\sim N\left( \mu, \frac{\sigma^{2}}{n} \right)$ approximately.

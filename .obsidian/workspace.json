@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0e075a9b3a726bb9",
+        "id": "e55ea3a8fbf4a8d9",
         "type": "tabs",
         "children": [
           {
-            "id": "0cb474ba606256c3",
+            "id": "556bace626a8db8d",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Untitled.base",
-                "bFile": "Untitled.base",
+                "aFile": "Year 4/Network Security/Network Security.md",
+                "bFile": "Year 4/Network Security/Network Security.md",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Untitled.base  (Working Tree)"
+              "title": "Diff: Network Security  (Working Tree)"
             }
           }
         ]
@@ -142,10 +142,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Types of Experiment.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Types of Experiment"
+              "title": "Outline"
             }
           },
           {
@@ -177,8 +179,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0cb474ba606256c3",
+  "active": "556bace626a8db8d",
   "lastOpenFiles": [
+    "Year 4/Dissertation/Notes on HQC Attacks.md",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Pasted image 20261009102025.png",
+    "Year 4/Statistical Modelling and Analysis/Examples.md",
+    "Year 4/Dissertation",
+    "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
+    "Year 4/Network Security/Network Security.md",
     "Year 2/Software Hardware Interface/Untitled.md",
     "Year 1/Understanding Users and User Requirements.md",
     "Year 1/Types of Variable.md",
@@ -186,17 +196,13 @@
     "Year 1/Types of Data.md",
     "Year 1/Nominal.md",
     "Year 1/Inferential Statistics.md",
-    "Untitled.base",
-    "Year 4/Network Security/Network Security.md",
     "Pasted image 20261010131931.png",
     "Pasted image 20261010130551.png",
     "Pasted image 20261010125455.png",
     "Pasted image 20261010115853.png",
     "Pasted image 20261010114519.png",
     "Pasted image 20261010111411.png",
-    "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
     "Year 4/Statistical Modelling and Analysis/Special Discrete Distributions Short Notes.md",
-    "Pasted image 20261009102025.png",
     "Pasted image 20261009102319.png",
     "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
     "Year 4/Statistical Modelling and Analysis",

@@ -186,3 +186,8 @@ choose any $m_0,m_1$, encrypt them to $c_0=E_{pk}(m_0)$ and compare the result t
 Makes use of both symmetric and asymmetric to improve security.
 Alice uses a key $k$ an Bob's public key to encrypt to $c_1$, she also symmetrically encrypts plaintext $m$ with $k$ to $c_2$.
 Bob can then decrypt $c_1$ using his private key, obtaining $k$ with which he symmetrically decrypts $c_2$ to obtain $m$.
+## Digital Signatures
+Private key must be kept secret and is used to sign a message
+The public key can be distributed publicly, used to verify signatures.
+## CA - Certificate Authorities
+Authorities that manage public keys and allow people to register officially, verifies that Alice's public key is Alice's public key.
