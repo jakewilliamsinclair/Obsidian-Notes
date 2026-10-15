@@ -239,4 +239,15 @@ From table 5, $\P(-1.96\lt Z\lt 1.96)=0.95$
 Where $Z=\frac{\bar X-1000}{\frac{1000}{\sqrt{50}}}$ 
 So $-1.96=\frac{a-1000}{\frac{1000}{\sqrt{50}}}$ => $a=723$ 
 $1.96=\frac{a-1000}{\frac{1000}{\sqrt{50}}}$ => $b=1277$ 
-2. answer = 0.0793
+2. Do it yourself, get answer = 0.0793
+### Example 5.26
+Die is thrown repeatedly, until accumulated score is >500.
+Distribution of the score on 140 throws, find probability that more than 140 throws are required.
+Single throw:
+$X_{i}\sim U(6)$ 
+$\E(X_{i})=3.5, Var(X_{i})=\frac{35}{12}$ 
+$S=\sum_{i=1}^{140}X_{i}, \E(S)=140\times 3.5=490$ 
+$Var(S)=140\times \frac{35}{12}=408.33$ 
+$\P$$($more than 140 throws required$)$ = $\P(S\le 500)$ 
+$=\P(S\le 500.5)$ - Continuity correction
+**exercise for me** using CLT answer = 0.6985
