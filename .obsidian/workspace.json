@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dbad63b16461c80e",
+        "id": "863a9a694997aabe",
         "type": "tabs",
         "children": [
           {
-            "id": "dfa88843ea61084c",
+            "id": "1eb9ce70212b8314",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Year 4/Dissertation/Notes on Dissertation Topics.md",
-                "bFile": "Year 4/Dissertation/Notes on Dissertation Topics.md",
-                "aRef": ""
+                "file": "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Notes on Dissertation Topics  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Statistical Modelling and Analysis"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "761334be1cc37a69",
@@ -142,6 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -179,8 +181,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dfa88843ea61084c",
+  "active": "2af0438f41a4aafc",
   "lastOpenFiles": [
+    "Year 4/Statistical Modelling and Analysis/Special Discrete Distributions Short Notes.md",
     "Year 4/Dissertation/Notes on Dissertation Topics.md",
     "Untitled 1.base",
     "Untitled.base",
@@ -202,7 +205,6 @@
     "Pasted image 20261010115853.png",
     "Pasted image 20261010114519.png",
     "Pasted image 20261010111411.png",
-    "Year 4/Statistical Modelling and Analysis/Special Discrete Distributions Short Notes.md",
     "Pasted image 20261009102319.png",
     "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
     "Year 4/Statistical Modelling and Analysis",

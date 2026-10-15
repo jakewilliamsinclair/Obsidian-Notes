@@ -188,3 +188,41 @@ $Var(\bar X)=\dots=\frac{\sigma^{2}}{n}$
 As the number of samples increases, the mean tends towards a normal distribution, this is called the Central Limit Theorem
 ## Central Limit Theorem
 For large $n, \bar{X}\sim N\left( \mu, \frac{\sigma^{2}}{n} \right)$ approximately.
+## Normal Approximation TO Binomial
+For large $n$, $X\sim N(np,np(1-p))$ **approximately**.
+$\P$ has mean $p$ and variance $\frac{p(1-p)}{n}$.
+For large $n$, $\P\sim N\left( \frac{p(1-p)}{n} \right)$.
+## Normal Approximation TO Poisson
+For large $\lambda$, $X\sim N(\lambda,\lambda)$ **approximately**.
+## Continuity Correction
+Used when approximating a discrete distribution using a continuous one.
+e.g. $X\sim Bin(200, 0.4)$
+$\E(X)=80,Var(X)=48$
+As the $n$ is large, by the CLT we can use the normal distribution
+$X\sim N(80,48)$ 
+$\P(X\ge84)\approx P(Z\ge \frac{84-80)}{\sqrt{48}}$ 
+## Distribution of Sample Variance
+...
+# Sampling from a Normal Distribution
+## Chi-squared
+ $\chi_{n}^{2}$ 
+The parameter $n$ is a positive integer. A $\chi_{n}^{2}$ random variable is the sum of the squares of $n$ independent $N(0, 1)$ random variables. That is, let $Z_{i}$ be i.i.d. $N(0, 1)$. Then
+$X=\sum_{i=1}^{n}Z_{i}^{2}$ 
+## Student's t distribution
+The t-distribution is symmetric but has higher variation than $N(0, 1)$. It has a single parameter, which is referred to as the number of ‘degrees of freedom’.
+Let $U\sim N(0, 1)$ and $V\sim \chi_{n}^{2}$ such that $U$ and $V$ are independent. Then
+$X=\frac{U}{\sqrt{\frac{V}{n}}}$ 
+is such that $X\sim t_{n}$. A random variable $X\sim t_{n}$ has mean $0$ and
+variance $\frac{n}{(n − 2)}$ for $n\gt 2$.
+## Mean and Variance
+Let $X=(X_{1}, X_{2},\dots,X_{n})$ be a random sample of a variable
+$X\sim N(\mu, \sigma^{2})$. Also let $\bar X$ be the
+sample mean and $S^2$ the sample variance. Then
+1. $\bar X$ and $S^2$ are independent random variables.
+
+2. We have 
+   $\frac{(n − 1)S^2}{\sigma^2}\sim \chi_{n-1}^{2}$ 
+3. We have
+   $\frac{\bar X-\mu}{\frac{\sigma}{\sqrt{n}}}\sim N(0,1)$.
+4. When $\sigma^2$ is unknown and instead we want to estimate it by $S^2$, we can use
+   $\frac{\bar X-\mu}{\frac{S}{\sqrt{n}}}\sim t_{n-1}$ 
