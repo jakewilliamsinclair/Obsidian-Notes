@@ -226,3 +226,17 @@ sample mean and $S^2$ the sample variance. Then
    $\frac{\bar X-\mu}{\frac{\sigma}{\sqrt{n}}}\sim N(0,1)$.
 4. When $\sigma^2$ is unknown and instead we want to estimate it by $S^2$, we can use
    $\frac{\bar X-\mu}{\frac{S}{\sqrt{n}}}\sim t_{n-1}$ 
+
+### Example 5.24
+Random sample of 50 lifetimes of light bulbs, exponentially distributed with mean 1000 hours. Let $X_i$ be a lifetime.
+1. Find the probability level for the sample mean lifetime interval with 95% chance the mean lies withing it.
+$X_{i}\sim Exp\left( \frac{1}{1000} \right)$ 
+$\E(X_{i})=1000$ 
+$Var(X_{i})=1,000,000$ 
+$\bar X\sim N\left( 1000,\frac{1000^2}{50} \right)$ approx.
+Find a,b with $\P(a\lt\bar X\lt b)=0.95$ 
+From table 5, $\P(-1.96\lt Z\lt 1.96)=0.95$ 
+Where $Z=\frac{\bar X-1000}{\frac{1000}{\sqrt{50}}}$ 
+So $-1.96=\frac{a-1000}{\frac{1000}{\sqrt{50}}}$ => $a=723$ 
+$1.96=\frac{a-1000}{\frac{1000}{\sqrt{50}}}$ => $b=1277$ 
+2. answer = 0.0793
