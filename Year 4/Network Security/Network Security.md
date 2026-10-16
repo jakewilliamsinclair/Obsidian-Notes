@@ -12,7 +12,6 @@ Data is accessible and usable upon demand by an authorised entity
 
 In cryptography availability becomes
 Authenticity: preventing attribution of data to false origin.
-
 ## Definition of an Encryption Scheme
 
 Encryption scheme if E: KxM→C, D: KxC→M
