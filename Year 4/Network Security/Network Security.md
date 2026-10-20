@@ -3,23 +3,18 @@ $\newcommand{\Z}{\mathbb{Z}}$
 
 ## Confidentiality
 Preventing disclosure of information to unauthorised entities
-
 ## Integrity
 Preventing unauthorised modification of information
-
 ## Availability
 Data is accessible and usable upon demand by an authorised entity
 
 In cryptography availability becomes
 Authenticity: preventing attribution of data to false origin.
-
 ## Definition of an Encryption Scheme
 
 Encryption scheme if E: KxM→C, D: KxC→M
 
 Encryption, Decryption, Keys, M plaintexts Ciphertexts
-
-
 # Types of Cipher
 ## Caesar
 Simple, shift all letters of an alphabet by a certain amount, this amount is the key.
