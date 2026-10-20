@@ -200,7 +200,7 @@ e.g. $X\sim Bin(200, 0.4)$
 $\E(X)=80,Var(X)=48$
 As the $n$ is large, by the CLT we can use the normal distribution
 $X\sim N(80,48)$ 
-$\P(X\ge84)\approx P(Z\ge \frac{84-80)}{\sqrt{48}}$ 
+$\P(X\ge84)\approx P(Z\ge \frac{84-80}{\sqrt{48}})$ 
 ## Distribution of Sample Variance
 ...
 # Sampling from a Normal Distribution
