@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c2768b640bc25aa7",
+        "id": "898f707ea602abae",
         "type": "tabs",
         "children": [
           {
-            "id": "14cb886b4e97d855",
+            "id": "e0fef84e5eedcf71",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Year 4/Network Security/Network Security.md",
-                "bFile": "Year 4/Network Security/Network Security.md",
-                "aRef": ""
+                "file": "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Network Security  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Statistical Modelling and Analysis"
             }
           }
         ]
@@ -182,11 +182,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "14cb886b4e97d855",
+  "active": "e0fef84e5eedcf71",
   "lastOpenFiles": [
     "Year 4/Network Security/Network Security.md",
-    "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
     "Year 4/Network Security/Cipher Types Short Notes.md",
+    "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
     "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
     "Year 4/Statistical Modelling and Analysis/Examples.md",
     "Year 4/Dissertation/Notes on Dissertation Topics.md",
