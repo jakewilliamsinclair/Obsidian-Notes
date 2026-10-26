@@ -1,5 +1,5 @@
-[[Statistical Modelling and Analysis#Probability Mass Function|PMF]] $p_X(x)$ is specific value (only useful for discrete)
-[[Statistical Modelling and Analysis#Cumulative Distribution Function|CDF]] $F_X(x)$ is chance of X being <= x
+[[Part 1#Probability Mass Function|PMF]] $p_X(x)$ is specific value (only useful for discrete)
+[[Part 1#Cumulative Distribution Function|CDF]] $F_X(x)$ is chance of X being <= x
 
 # Discrete PMF
 $p_X(x)=f(X)=$ Chance that X is x

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c2768b640bc25aa7",
+        "id": "2098250890cf9c7f",
         "type": "tabs",
         "children": [
           {
-            "id": "14cb886b4e97d855",
+            "id": "10b755acdb5d78d8",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Year 4/Network Security/Network Security.md",
-                "bFile": "Year 4/Network Security/Network Security.md",
-                "aRef": ""
+                "file": "Year 4/Statistical Modelling and Analysis/Part 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Network Security  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Part 2"
             }
           }
         ]
@@ -115,12 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 4/Network Security/Network Security.md",
+                "file": "Types of Experiment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Types of Experiment"
             }
           },
           {
@@ -130,9 +130,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
+                "useHierarchy": true
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -144,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 4/Network Security/Network Security.md",
+                "file": "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -182,40 +180,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "14cb886b4e97d855",
+  "active": "fd9e57ba80d9c513",
   "lastOpenFiles": [
-    "Year 4/Network Security/Network Security.md",
     "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
+    "Year 4/Statistical Modelling and Analysis/Part 1.md",
+    "Year 4/Statistical Modelling and Analysis/Part 2.md",
+    "Year 4/Network Security/Network Security Part 2.md",
     "Year 4/Network Security/Cipher Types Short Notes.md",
-    "Year 4/Statistical Modelling and Analysis/Statistical Modelling and Analysis.md",
+    "Year 4/Network Security/Network Security.md",
+    "Year 4/Dissertation/Notes on Dissertation.md",
+    "Year 4/Statistical Modelling and Analysis/Special Discrete Distributions Short Notes.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "Pasted image 20261009102025.png",
     "Year 4/Statistical Modelling and Analysis/Examples.md",
-    "Year 4/Dissertation/Notes on Dissertation Topics.md",
     "Year 4/Dissertation",
-    "README.md",
+    "Year 2/Software Hardware Interface/Untitled.md",
+    "Year 1/Understanding Users and User Requirements.md",
+    "Year 1/Types of Variable.md",
+    "Year 1/Types of Experiment.md",
+    "Year 1/Types of Data.md",
+    "Year 1/Nominal.md",
+    "Year 1/Inferential Statistics.md",
     "Pasted image 20261010131931.png",
     "Pasted image 20261010130551.png",
     "Pasted image 20261010125455.png",
     "Pasted image 20261010115853.png",
     "Pasted image 20261010114519.png",
     "Pasted image 20261010111411.png",
-    "Year 4/Statistical Modelling and Analysis/Special Discrete Distributions Short Notes.md",
-    "Pasted image 20261009102025.png",
     "Pasted image 20261009102319.png",
-    "Year 1/Types of Data.md",
     "Year 4/Statistical Modelling and Analysis",
     "Year 4/Network Security",
     "Year 4",
-    "Year 1/Understanding Users and User Requirements.md",
-    "Year 1/Inferential Statistics.md",
-    "Year 2/Software Hardware Interface/Untitled.md",
     "Year 2/Software Hardware Interface",
     "Year 2",
     "Untitled 1.md",
     "Year 1",
     "Untitled.canvas",
-    "Year 1/Types of Variable.md",
-    "Year 1/Types of Experiment.md",
-    "Year 1/Nominal.md",
     "Welcome.md",
     "create a link.md",
     "Experimental Design"
