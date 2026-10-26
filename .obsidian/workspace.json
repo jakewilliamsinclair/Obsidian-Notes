@@ -11,14 +11,15 @@
             "id": "10b755acdb5d78d8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Year 4/Statistical Modelling and Analysis/Part 2.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Part 2"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Index)"
             }
           }
         ]
@@ -180,11 +181,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fd9e57ba80d9c513",
+  "active": "10b755acdb5d78d8",
   "lastOpenFiles": [
+    "Year 4/Statistical Modelling and Analysis/Part 2.md",
     "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
     "Year 4/Statistical Modelling and Analysis/Part 1.md",
-    "Year 4/Statistical Modelling and Analysis/Part 2.md",
     "Year 4/Network Security/Network Security Part 2.md",
     "Year 4/Network Security/Cipher Types Short Notes.md",
     "Year 4/Network Security/Network Security.md",
