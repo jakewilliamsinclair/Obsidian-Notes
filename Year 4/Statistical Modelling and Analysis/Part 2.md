@@ -47,4 +47,49 @@ $=2\times \frac{\theta}{2}$
 ## LSE
 $\sum(X_{i}-\E(X))^2$ 
 Sum of the difference between X values and the expected value, squared.
-### Example 6.10
+## MML
+Calculate outcomes and choose highest probability.
+### Example 6.12
+You are given a coin that you do not think is fair (1/4 rather than 1/2). You flip the coin 10 times and observe that the number of head is 4.
+Calculate probability of 4 heads out of 10 for each possibility:
+Fair coin $X\sim Bin(10,0.5)$:
+$\P(X=4)=\left(10\atop 4\right)(0.5)^4(1-0.5)^6=0.205$
+Biased coin $X\sim Bin(10,0.25)$:
+$\P(X=4)=\left(10\atop 4\right)(0.25)^4(1-0.25)^6-0.146$ 
+$L(\theta,x)=f(x;\theta)$  $[pdf/pmf]$ 
+### Likelihood function
+For a paramater $\theta$, given a sample $x$:
+$L(\theta,x)=f_{X}(x_{1};\theta)f_{X}(x_{2};\theta)\dots f_{X}(x_{n};\theta)=$ 
+$\Pi_{i=1}^{n}f(x_{i};\theta)$ 
+### Log-likelihood function:
+$l(\theta)=l(\theta;x)=\ln[L(\theta,x)]=$ 
+$\sum_{i=1}^{n}\ln(f(x_{i};\theta))$ 
+### Score function:
+$U(\theta)=U(\theta;x)=\frac{dl(\theta)}{d\theta}$ 
+### Fisher's Information
+$I(\theta)=\E\left[\left(\frac{dl}{d\theta}\right)^2\right]$ 
+## MLE
+The value of $\hat\theta$ that maximises $L(\theta)$. In many cases it is easier to maximise $l(\theta)$ which provides the same value for $\theta$.
+$\frac{d}{d\theta}(\ln \theta)=\frac{1}{\theta}$ 
+In general for $X\sim Bin(n,\theta)$ 
+$L(\theta,x)=\left(n\atop x\right)\theta^x(1-\theta)^{n-x},l(\theta)=$ 
+$k+x\ln(\theta)+(n-x)\ln(1-\theta)$ 
+
+### Poisson:
+$f(x_{i};\lambda)=\frac{e^{-\lambda}\lambda^{x_{i}}}{x_{i}!}$ 
+$l_{i}(\lambda)=\ln\left(\frac{e^{-\lambda}\lambda^{x_{i}}}{x_{i}!}\right)$ 
+$=-\lambda+x_{i}\ln(\lambda)-\ln(x_{i}!)$
+So $l(\lambda)=\sum_{i=1}^n\{-\lambda+x_{i}\ln(\lambda)-\ln(x_{i}!)\}$ 
+$=-n\lambda+(\ln(\lambda))\left(\sum_{i=1}^nx_{i}\right)-k$ 
+$\implies \frac{dl}{d\lambda}=-n+\frac{\sum_{x=i}^nx_{i}}{\lambda}$ 
+Set $\frac{dl}{d\lambda}=0$, solve for $\lambda$, find $\hat\lambda=\bar x$.
+### Binomial
+?#######
+## Classical large samples properties of MLEs
+In large samples, an MLE $\hat\theta$ is approximately unbiased, efficient and normally distributed.
+So asymptotically
+$\hat\theta \sim N\left(\theta,\frac{1}{I(\theta)}\right)$ 
+So asymptotically,
+$se\left( \hat{\theta}=\frac{1}{\sqrt{I(\theta)}} \right)$ 
+estimate standard error by:
+$ese(\hat{\theta})=\frac{1}{\sqrt{ I(\hat{\theta}) }}$ 
