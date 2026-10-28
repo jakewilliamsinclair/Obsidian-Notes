@@ -4,22 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2098250890cf9c7f",
+        "id": "0fe58b655a02a560",
         "type": "tabs",
         "children": [
           {
-            "id": "10b755acdb5d78d8",
+            "id": "a57259ffc72c0c36",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "Year 4/Statistical Modelling and Analysis/Part 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Index)"
+              "icon": "lucide-file",
+              "title": "Part 2"
             }
           }
         ]
@@ -181,15 +180,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "10b755acdb5d78d8",
+  "active": "a57259ffc72c0c36",
   "lastOpenFiles": [
     "Year 4/Statistical Modelling and Analysis/Part 2.md",
+    "Year 4/Network Security/Network Security Part 2.md",
+    "Year 4/Dissertation/Notes on Dissertation.md",
     "Year 4/Statistical Modelling and Analysis/Random Variable Functions Short Notes.md",
     "Year 4/Statistical Modelling and Analysis/Part 1.md",
-    "Year 4/Network Security/Network Security Part 2.md",
     "Year 4/Network Security/Cipher Types Short Notes.md",
     "Year 4/Network Security/Network Security.md",
-    "Year 4/Dissertation/Notes on Dissertation.md",
     "Year 4/Statistical Modelling and Analysis/Special Discrete Distributions Short Notes.md",
     "Untitled.base",
     "Untitled 1.base",

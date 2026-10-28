@@ -44,3 +44,7 @@ Unbiased? $\E(\hat\theta)=\E(2\bar{X})$
 $=2\E(\bar{X})$
 $=2\E(X)$
 $=2\times \frac{\theta}{2}$ 
+## LSE
+$\sum(X_{i}-\E(X))^2$ 
+Sum of the difference between X values and the expected value, squared.
+### Example 6.10
