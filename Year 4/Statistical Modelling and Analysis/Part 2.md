@@ -31,6 +31,7 @@ For example the order of heads and tails is (typically) irrelevant so does not n
 2. Method of least squares estimators (LSE)
 3. Maximum likelihood estimators (MLE)
 ## MME
+$\E[X]$ roughly equals $\bar{X}$ so for some $\theta=f(\E[X])$ it holds $\hat{\theta}=f(\bar{X})$ 
 Equate population mean and variance to corresponding sample means and variance.
 ### Example 6.20
 Random sample, size 5, $X\sim U(0,\theta)$.
@@ -40,7 +41,7 @@ $\E(X)=\frac{\theta}{2}$ (from uniform definition)
 So $\bar{X}=\frac{\hat\theta}{2}$ 
 $\implies \hat\theta=2\bar{X}$ is MME
 With given data, $\bar{x}=0.646$, so $\hat\theta=1.292$
-Unbiased? $\E(\hat\theta)=\E(2\bar{X})$
+Unbiased? $\E(\hat\theta)=\E(2\bar{X})$ 
 $=2\E(\bar{X})$
 $=2\E(X)$
 $=2\times \frac{\theta}{2}$ 
@@ -68,6 +69,8 @@ $\sum_{i=1}^{n}\ln(f(x_{i};\theta))$
 $U(\theta)=U(\theta;x)=\frac{dl(\theta)}{d\theta}$ 
 ### Fisher's Information
 $I(\theta)=\E\left[\left(\frac{dl}{d\theta}\right)^2\right]$ 
+Or (somehow)
+$I(\theta)=-\E\left[\frac{d^2l}{d\theta^2}\right]$ 
 ## MLE
 The value of $\hat\theta$ that maximises $L(\theta)$. In many cases it is easier to maximise $l(\theta)$ which provides the same value for $\theta$.
 $\frac{d}{d\theta}(\ln \theta)=\frac{1}{\theta}$ 
