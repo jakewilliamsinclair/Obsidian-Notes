@@ -96,3 +96,48 @@ So asymptotically,
 $se\left( \hat{\theta}=\frac{1}{\sqrt{I(\theta)}} \right)$ 
 estimate standard error by:
 $ese(\hat{\theta})=\frac{1}{\sqrt{ I(\hat{\theta}) }}$ 
+## MLEs in multi-parameter models
+$\frac{\partial l}{\partial \mu}=2\sum \left(\frac{X_{i}-\mu}{2\phi}\right)$ 
+# Confidence Interavals
+$\P(L_{1}\le \theta \le L_{2})\ge 1-\alpha$ 
+Choose $\alpha$, e.g. $\alpha=0.05$ 
+Then calculate $L_{1},L_{2}$ 
+## CI's for Population Mean
+Suppose $X\sim N(\mu,\sigma^2)$ 
+### $\sigma^2$ Known
+Start here:
+$\P\left(-1.9600\lt Z\lt 1.9600\right)=0.95$ (from table 5)
+Z is standardised, un-standardise for X
+$\P\left(-1.9600\lt \frac{\bar{X}-\mu}{{\sigma}/{\sqrt{ n }}} \lt 1.9600\right)$ 
+Move things around to get $\mu$ alone
+$\P\left( -1.96 \frac{\sigma}{\sqrt{ n }} \lt \bar{X}-\mu \lt 1.96 \frac{\sigma}{\sqrt{ n }}\right)$ 
+$\P\left(-\bar{X}-1.96 \frac{\sigma}{\sqrt{ n }}\lt -\mu \lt \bar{X}-\bar{X}+1.96 \frac{\sigma}{\sqrt{ n }}\right)$ 
+$\P\left(\bar{X}-1.96 \frac{\sigma}{\sqrt{ n }} \lt \mu \lt \bar{X} + 1.96 \frac{\sigma}{\sqrt{ n }} \right)$ 
+95% CI for $\mu$ is $\bar{X}\pm 1.96 \frac{\sigma}{\sqrt{ n }}$ 
+This can be generalised by:
+$X\pm z\times \frac{\sigma}{\sqrt{ n }}$ where $z$ is the value from the tables (half the 5% -> 2.5% and get that value).
+### $\sigma^2$ Unknown
+Must use estimated standard error e.s.e
+$e.s.e(\bar{X})=\frac{S}{\sqrt{ n }}$ 
+#### Example 7.7
+Random sample of 20 observations from $N(\mu, \sigma^2)$ 
+$$
+\bar{x}=\frac{4035}{20}=201.75\\
+s^2=\frac{1}{n-1}\left(\sum x_{i}^2-\frac{\left(\sum x_{i}\right)}{n}\right)\\
+=\frac{1}{19}\left(857115-\frac{4025^2}{20}\right)\\
+=2265.99
+$$
+With $n=20$, for 95% two-sided CI, need $\P(t_{19}\gt t)=0.025$ 
+Table 10 => $t=2.039$ 
+formula of sample mean times standard error (from formula sheet)
+95% CI is $\bar{x}\pm 2.093\times \frac{s}{\sqrt{ n }}$ 
+$=201.75\pm 2.093\times \sqrt{ \frac{2265.99}{20} }$ 
+$=(179.47, 224.03)$ (lower, upper)
+### Large Sample
+This means that even though we may not know $\sigma$ we can assume we have a reasonable estimate as the sample is large (CLT style).
+$e.s.e(\bar{x})=\frac{s}{\sqrt{ n }}$ 
+Only use t-table if data is normally distributed.
+### One Sided Interval
+$\P\left(\frac{\bar{X}-\mu}{\sigma/\sqrt{ n }}\lt 1.645\right)=0.95$ 
+this gives
+$\left( \bar{X}-1.645 \frac{\sigma}{\sqrt{ n }},\infty \right)$
