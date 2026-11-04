@@ -45,3 +45,28 @@ Layers 4-7
 ### IPSec
 Set of protocols for all IP traffic by encrypting packets
 Layer 3
+
+## IDS/IPS
+### Intrusion Detection System
+Monitors networks for malicious activities or security policy violations
+Usually cannot stop an attack itself.
+
+Intrusion detection is based on the assumption that the behaviour of the intruder differs from that of a legitimate user.
+
+#### Types
+##### Host based Intrusion Detection System (HIDS):
+▪ Sits on a computer itself and monitors the host itself
+▪ Expensive to deploy on all computers
+▪ Used for servers that require this extra protection
+##### Network based Intrusion Detection System (NIDS):
+▪ Monitors for intrusions on the network
+▪ Cheaper to purchase as the investment is in one appliance sitting on your network monitoring traffic
+#### Detection Styles
+##### Signature-based Detection
+Signatures created by vendors on potential attacks that have taken place in the past. This means it cannot detect new attacks.
+##### Anomaly-based Detection
+Learn normal behaviour over time and use machine learning or statistical analysis to detect behaviour outside the norm.
+# SSL/TLS
+Secure websites use encryption and authentication standards.
+Commonly referred to as Secure Sockets Layer
+SSL was the predecessor to TLS which is commonly used now.

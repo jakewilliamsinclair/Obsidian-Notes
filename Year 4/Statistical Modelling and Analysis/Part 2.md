@@ -140,4 +140,76 @@ Only use t-table if data is normally distributed.
 ### One Sided Interval
 $\P\left(\frac{\bar{X}-\mu}{\sigma/\sqrt{ n }}\lt 1.645\right)=0.95$ 
 this gives
-$\left( \bar{X}-1.645 \frac{\sigma}{\sqrt{ n }},\infty \right)$
+$\left( \bar{X}-1.645 \frac{\sigma}{\sqrt{ n }},\infty \right)$ 
+## CIs for Population Variace
+$X\sim N(\mu,\sigma^2)$, we want CI for $\sigma^2$.
+$\P(X\lt a)=\P(X \gt b) = \frac{\alpha}{2}$ 
+Then we have
+$\P\left(a \lt \frac{(n-1)S^2}{\sigma^2} \lt b\right)=1-\alpha$ 
+becomes
+$\P\left(\frac{(n-1)S^2}{b} \lt \sigma^2 \lt \frac{(n-1)S^2}{a}\right)$ 
+$\left(\frac{(n-1)S^2}{b}, \frac{(n-1)S^2}{a}\right)$ 
+This is on the formula sheet
+Back to
+### Example 7.7
+With $n=20$, for 95% CI for $\sigma^2$, need
+$\P(\chi_{19}^2\lt a)=0.025\implies a=8.907$ 
+$\P(\chi_{19}^2\lt b)=0.025\implies b=32.85$ 
+CI is $\left(\frac{(n-1)S^2}{b},\frac{(n-1)S^2}{a}\right)=\left(\frac{19\times 2265.99}{32.85}, \frac{19\times 2265.99}{8.907}\right)$ 
+$=(1310.62, 4833.70)$ 
+95% CI for $\sigma$ is $\left(\sqrt{ 1310.62 }, \sqrt{ 4833.70 }\right)$
+$=(36.20,69.52)$ 
+
+New data:
+$n=19$ 
+$\sum x_{i}=4035-359=3676$ 
+$\sum x_{i}=837115-359^2=728234$ 
+95% CIs for $\mu$ & $\sigma$ ... exercise for me
+## CIs for Population Proportion
+$X\sim Bin(n,\theta)$ where $\theta$ is the probability of success but $P=\frac{X}{n}$ or observed probability of success $(\frac{successes}{trials})$ can also be referred to as $\hat{\theta}$.
+$P\pm \left( z_{\frac{a}{s}}\times ese(P)) \right)$ 
+where
+$ese(P)=\sqrt{ \frac{P(1-P)}{n} }$ 
+### Example 7.8
+Calculate 95% CIs for $\theta$
+a) a random sample of 200 includes 70 with the property:
+b) a random sample of 1200 includes 420 with the property:
+a) $\hat{\theta}=\frac{70}{200}=0.35,n=200$ 
+$ese(\hat{\theta})=\sqrt{ \frac{0.25\times 0.65}{200} }=0.0337$ 
+$0.35\pm 1.96\times 0.0337$ 
+$=(0.2840.416)$ 
+
+b) $\hat{\theta}=\frac{420}{1200}=0.35,n=1200$ 
+$ese(\hat{\theta})=\sqrt{ \frac{0.25\times 0.65}{1200} }=0.0138$ 
+$0.35\pm 1.96\times 0.0138$ 
+$=0.35\pm 0.027048$ 
+$=(0.323,0.377)$ 
+## CIs for Poisson Mean
+$\bar{X}\pm$ Formula sheet
+### Example 7.3
+Number of potholes in a month is Poisson with mean $\lambda$.
+Total number of holes in 36 months is 442. Find CI for $\lambda$.
+$n=36, \hat{\lambda}=\frac{442}{36}=12.278$ 
+$ese(\hat{\lambda})=\sqrt{ \frac{\hat{\lambda}}{n} }=\sqrt{ \frac{12.278}{36} }=0.584$  
+95% CI for $\lambda$ is $12.278\pm 1.96\times 0.584$ 
+$=12.278\pm 1.145$ 
+$=(11.13,13.42)$ 
+
+99% CI for $\lambda$ is (just to compare)
+requires a different critical value from the table
+$12.278\pm 2.5758\times 0.584$ 
+$=12.278\pm 1.504$ 
+$=(10.77,13.78)$ 
+We can see the 99% CI is wider than the 95% CI.
+
+## CIs Based on General MLEs
+For large sample MLEs we have a useful simple result based on the normal distribution.
+In many cases an MLE $\hat{\theta}$ is approx. $N\left( \theta, \frac{1}{I(\theta)} \right)$ 
+
+$\hat{\theta}\pm\left( z_{\frac{\alpha}{2}}\times se(\hat{\theta}) \right)$ 
+MEMORISE THIS:
+$ese(\hat{\theta})=\sqrt{ \frac{1}{I(\theta)} }$ 
+
+### Example 7.4
+Random sample size n, of $X\sim Exp(\lambda)$ (so mean $\mu=\frac{1}{\lambda}$)
+Construct an **approximate** (this word means use normal distribution) 95% CI for $\lambda$.
