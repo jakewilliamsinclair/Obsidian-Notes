@@ -10,7 +10,7 @@ $\hat\theta = \sum_{i=1}^{n}\omega_{i}X_{i}$ where $\omega$ are known constants
 are both reasonable estimators ($\omega$ would reasonably be chosen as $\frac{1}{n}$ anyway).
 
 $\hat\theta$ is asymptotically unbiased for $\theta$ if $\E(\hat\theta) = \theta$ 
-The bias of ˆθ is B(ˆθ) = E(ˆθ − θ) = E(ˆθ) − θ
+The bias of $\hat{\theta}$ is $B(\hat{\theta}) = E(\hat{\theta} - \theta) = E(\hat{\theta}) - \theta$ 
 
 The mean square error of an estimator $\hat\theta$ is MSE($\hat\theta$) = $\E[(\hat\theta − \theta)^2]$.
 An estimator $\hat\theta_{1}$ is more efficient than $\hat\theta_2$ if $MSE[\hat\theta_{1}]\lt MSE[\hat\theta_{2}]$.
