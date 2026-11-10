@@ -70,3 +70,19 @@ Learn normal behaviour over time and use machine learning or statistical analysi
 Secure websites use encryption and authentication standards.
 Commonly referred to as Secure Sockets Layer
 SSL was the predecessor to TLS which is commonly used now.
+# Identity and Access Management (IAM)
+The technologies that provide control over used validation and the resources they can manage.
+## Authentication
+Performed between a **claimant** and an **authenticator**.
+## Security and Usability
+Authentication has to balance the 2
+### Security
+Concerned with the confidentiality and integrity of the authentication information.
+### Usability
+Concerned with usability of the service for users
+Poor usability can reduce security because of difficulty of use
+## Cognitive Passwords
+AKA security questions
+Can be insecure as the information is not secret
+## Authentication Methods
+Many common ones, based on **factors**: something you know, something you have or something you are.
